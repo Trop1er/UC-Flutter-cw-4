@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MainApp());
+}
+
+class MainApp extends StatelessWidget {
+   MainApp({super.key});
+   
+     get mainAxisAlignment => null;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Column(
+          children: [
+            Center(
+              child: Row(
+                children: [
+                  Container(
+                    
+                    padding: EdgeInsets.all(80),
+                    child: Image.network("https://c4.wallpaperflare.com/wallpaper/758/310/560/forest-dog-husky-wallpaper-preview.jpg",
+                     width: 200,
+                     height: 200,
+                    ),
+                  ),
+                  Text("Wolf"),
+                ],
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween ,
+            children:[
+              Text("Name: Ruby"),
+            Text("Age: 6"), 
+            Text("Gender: Female"),
+
+            ],  
+            ),
+          
+
+          ],
+        ), 
+        )
+
+       
+    );
+  }
+}
